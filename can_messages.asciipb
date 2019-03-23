@@ -526,5 +526,16 @@ msg {
 }
 
 # IDs: 53-63 Reserved
+msg {
+  id: 53
+  source: TEST_MASTER
+  # target: TEST_SLAVE
+  msg_name: "led"
+  can_data {
+    u16 {
+      field_name_1: "green_led_bitset"
+    }
+  }
+}
 
 # No ID may exceed 63. 

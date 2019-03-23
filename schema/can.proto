@@ -64,6 +64,8 @@ message CanMsg {
     SOLAR_MASTER_REAR = 11;
     SENSOR_BOARD = 12;
     CHARGER = 13;
+    TEST_MASTER = 14; 
+    TEST_SLAVE = 15; 
   }
 
   uint32 raw_id = 1;  // 0-2047 only
